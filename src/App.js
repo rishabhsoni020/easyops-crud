@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Create from './components/Create';
+import Home from './components/Home';
+import Update from './components/Update';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Customer Data Management {`(CRUD)`}</h2>
+      <h6>This is not connected to a datebase</h6>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/create' element={<Create />} />
+          <Route path='/update' element={<Update />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
