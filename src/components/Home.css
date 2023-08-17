@@ -1,0 +1,65 @@
+.container {
+	/* max-width: 800px; */
+	margin: auto;
+	padding: 5%;
+}
+
+.gradient-table {
+	width: 100%;
+	border-collapse: collapse;
+	border-radius: 8px;
+}
+
+.gradient-table th,
+.gradient-table td {
+	padding: 12px;
+	text-align: left;
+	color: black;
+}
+
+.gradient-table th {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.gradient-table tbody tr:nth-child(odd) {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.gradient-table tbody tr:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.action-button {
+	color: #000;
+	text-align: center;
+	background-color: rgba(219, 255, 51, 0.7);
+	border-radius: 0.25rem;
+	padding: 0.75rem 1.5rem;
+}
+
+.action-button:hover {
+	text-decoration: none;
+	transform: translate(-1px, -1px);
+}
+
+.create-button {
+	display: block;
+	z-index: 0;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	color: #000;
+	text-align: center;
+	background-color: rgba(219, 255, 51, 0.7);
+	border-radius: 0.25rem;
+	padding: 0.75rem 1.5rem;
+	font-weight: 500;
+	transition: all 0.2s;
+	position: relative;
+	transform: translate(0);
+	box-shadow: 1px 1px 1rem rgb(26 26 26 / 15%);
+}
+
+.create-button:hover {
+	text-decoration: none;
+	transform: translate(-1px, -1px);
+}
